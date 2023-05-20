@@ -1,16 +1,19 @@
 implementing the "Distance Vector Routing" protocol. Since it follows a decentralized approach, you will be implementing this algorithm via multithreading in Python. Each thread will represent a router instance. The threads (routers) can communicate through a shared queue.
 For the following sample topology,
 the program should parse the following input to understand the topology of the network:
+
 3
 A B C
 A B 5
 A C 2
 EOF
+
 where:
 ● The first line represents the number of routers present in the network.
 ● The second line represents the fixed name (interface) of the router.
 ● The third line like "A B 5" represents the cost of link connecting nodes A and B. Similar semantics is followed until the last line.
 ● The last line represents the end of file (denoted by "EOF").
+
 Output and implementation:
 The output should initially display the routing tables of each router.
 After 2 seconds, each router should forward it's routing table to the adjacent routers using a shared queue.
